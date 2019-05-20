@@ -1,4 +1,4 @@
-{% set version = "0.7.3" %}
+{% set version = "1.0.0" %}
 
 package:
   name: netcdf-scm
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/netcdf-scm/netcdf-scm-{{ version }}.tar.gz
-  sha256: 0b5103d2ed158e88fe8392e4c1d79aea795f409da0bd26501976e1c18d32a9bd
+  sha256: 2e0b5fa6ce4ae89e6f0abea04fbe86af65eef70a5e4e226b1d966406f903f662
 
 build:
   number: 0
