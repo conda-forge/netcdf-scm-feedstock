@@ -1,4 +1,4 @@
-{% set version = "2.0.0rc1" %}
+{% set version = "2.0.0rc2" %}
 
 package:
   name: netcdf-scm
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/netcdf-scm/netcdf-scm-{{ version }}.tar.gz
-  sha256: 55041fea184308a23ded5e1a333d414d7baae740fa43c1e8b0531b0d7cf18c7a
+  sha256: 717894e790c94b1b123b34c27f389bae135e17597df179845628d7e9ab115a8f
 
 build:
   number: 0
@@ -35,13 +35,13 @@ test:
     - python -c "import netcdf_scm; assert netcdf_scm.__version__ == '{{ version }}'"
 
 about:
-  home: https://gitlab.com/znicholls/netcdf-scm
+  home: https://gitlab.com/netcdf-scm/netcdf-scm
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Python wrapper for processing netCDF files for use with simple climate models
-  doc_url: https://gitlab.com/znicholls/netcdf-scm
-  dev_url: https://netcdf-scm.readthedocs.io/en/latest/
+  doc_url: https://netcdf-scm.readthedocs.io/en/latest/
+  dev_url: https://gitlab.com/netcdf-scm/netcdf-scm
 
 extra:
   recipe-maintainers:
