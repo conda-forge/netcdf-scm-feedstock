@@ -1,7 +1,7 @@
 About netcdf-scm
 ================
 
-Home: https://gitlab.com/znicholls/netcdf-scm
+Home: https://gitlab.com/netcdf-scm/netcdf-scm
 
 Package license: BSD-2-Clause
 
