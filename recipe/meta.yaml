@@ -23,7 +23,7 @@ requirements:
     - iris
     - numpy
     - python-dateutil
-    - pymagicc==2.0.0rc3
+    - pymagicc ==2.0.0rc3
     - scipy
     - tqdm
 
