@@ -5,7 +5,7 @@ Home: https://gitlab.com/netcdf-scm/netcdf-scm
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python wrapper for processing netCDF files for use with simple climate models
 
