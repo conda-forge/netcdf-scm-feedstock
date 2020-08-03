@@ -9,9 +9,9 @@ source:
   sha256: d9d04be9264eae4e8ffc09d22d820ff410519ca76dff5f8d5f9bdfd877f0e168
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
     - iris
     - numpy
     - python-dateutil
-    - pymagicc ==2.0.0rc3
+    - pymagicc >=2.0.0rc5
     - scipy
     - tqdm
 
