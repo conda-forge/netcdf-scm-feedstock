@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/netcdf-scm/netcdf-scm-{{ version }}.tar.gz
-  sha256: 0d7e39c0d055c7c32e9c824325840ff2e39a8bb43f02cf3b25c4648b0ea172ef
+  sha256: 0b4774d4ce7a84556b51b5299a4e1231299ff3850d67c345587a1d6acf307a0f
 
 build:
   number: 0
