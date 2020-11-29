@@ -9,7 +9,7 @@ source:
   sha256: f30615289b558e83ee24aa87114e492520c018d5ff7e27cd14b800ba91bbfc19
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://gitlab.com/netcdf-scm/netcdf-scm
-  license: BSD-2-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Python wrapper for processing netCDF files for use with simple climate models
