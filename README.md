@@ -3,7 +3,7 @@ About netcdf-scm
 
 Home: https://gitlab.com/netcdf-scm/netcdf-scm
 
-Package license: BSD-2-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/netcdf-scm-feedstock/blob/master/LICENSE.txt)
 
