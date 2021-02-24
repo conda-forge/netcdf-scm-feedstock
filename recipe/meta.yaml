@@ -19,11 +19,13 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
+    - cftime <1.4
     - click
     - iris
     - numpy
     - python-dateutil
     - pymagicc >=2.0.0rc5
+    - scmdata >=0.7
     - scipy
     - tqdm
 
