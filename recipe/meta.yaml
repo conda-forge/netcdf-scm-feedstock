@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "2.0.2" %}
 
 package:
   name: netcdf-scm
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/netcdf-scm/netcdf-scm-{{ version }}.tar.gz
-  sha256: 6651fe79d0b392290973589ce0491542e570aa12fba38558d97c00cac67e89b7
+  sha256: 1a34e423735d403ebdd8bd989f753a9f4df6358f624b256938562b316bf83c24
 
 build:
   number: 0
@@ -19,11 +19,12 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
+    - cftime <1.4
     - click
     - iris
     - numpy
     - python-dateutil
-    - pymagicc >=2.0.0rc5
+    - pymagicc >=2.0.0
     - scipy
     - tqdm
 
