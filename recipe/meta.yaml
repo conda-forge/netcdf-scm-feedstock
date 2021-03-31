@@ -9,7 +9,7 @@ source:
   sha256: 08fea036cd287efaf8ad901e4bf6f512e67b549a335310d5387a466d5ecf17e0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
@@ -28,6 +28,7 @@ requirements:
     - scmdata >=0.7
     - scipy
     - tqdm
+    - xarray >=0.16.2,<0.17
 
 test:
   imports:
