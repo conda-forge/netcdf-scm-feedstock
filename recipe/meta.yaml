@@ -1,4 +1,4 @@
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: netcdf-scm
@@ -6,29 +6,30 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/netcdf-scm/netcdf-scm-{{ version }}.tar.gz
-  sha256: 08fea036cd287efaf8ad901e4bf6f512e67b549a335310d5387a466d5ecf17e0
+  sha256: 52995b0dc3268b8eb6b1f16c4b7c5fb5bf83fcc4e90e049653b5b00592362ec1
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - python >=3.6
-    - cftime <1.4
+    - python >=3.7
+    - cf-units >=3.0
+    - cftime >=1.4
     - click
     - iris
     - numpy
     - python-dateutil
-    - pymagicc >=2.0.0rc5
+    - pymagicc >=2.0.0
     - scmdata >=0.7
     - scipy
     - tqdm
-    - xarray >=0.16.2,<0.17
+    - xarray >=0.18
 
 test:
   imports:
