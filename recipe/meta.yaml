@@ -5,20 +5,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/n/netcdf-scm/netcdf-scm-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/n/netcdf-scm/netcdf-scm-{{ version }}.tar.gz
   sha256: 52995b0dc3268b8eb6b1f16c4b7c5fb5bf83fcc4e90e049653b5b00592362ec1
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - cf-units >=3.0
     - cftime >=1.4
     - click
@@ -32,6 +32,8 @@ requirements:
     - xarray >=0.18
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - netcdf_scm
 
